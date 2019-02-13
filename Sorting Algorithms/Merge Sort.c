@@ -2,7 +2,7 @@
 
 int mergeSort(int *a, int l, int r) {
     if (l < r) {
-	int m = (l + r) / 2;
+        int m = (l + r) / 2;
         mergeSort(a, l, m);
         mergeSort(a, m, r);
         merge(arr, l, m , r);
@@ -18,7 +18,7 @@ int merge(int *a, int l, int m ,int r) {
     int left[n1];
     int right[n2];
     for (i = 0; i < n1; i++) {
-	left[i] = a[i];
+        left[i] = a[i];
     }
     for (j = 0; j < n2; j++) {
         right[j] = b[j + 1];
